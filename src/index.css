@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #e6ecf0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Nav bar  */
+.navbar{
+  margin-bottom: 1rem;
+}
+
+.navbar a{
+  font-weight: bold;
+  color:white;
+}
+
+.navbar a:hover{
+  color:white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.navbar-brand>img{
+  display: inline-block;
+  width: 30px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+  border-radius: 2px;;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+ul.nav.navbar-nav li{
+  margin: 0 0.5rem;
+}
+
+.onboarding>.navbar{
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(3,235,255,1) 0%, rgba(152,70,242,1) 100.2% );
+  
+background-size: 100% 100%;
+}
+
+
+/***  Header  ****/
+
+.home-hero{
+  width: 100vw;
+  height: 100vh;
+  position:absolute;
+  top:0;
+  left: 0;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/bg11.jpg");
+  z-index: -1;
+  padding: 1rem;
+  background-position: center center;
+  background-size: cover;
+  color:#fff;
+  text-shadow: 0 0 8px #66757f;
+}
+
+#messages .list-group-item{
+  display: flex;
+  align-items: flex-start;
+  padding: 7px 20px 12px;
+}
+#messages:not(.no-hover) .list-group-item:hover{
+  background-color: #e6ecf0;
+}
+.img-thumbnail {
+  min-width: 200px;
+  height: 200px;
+}
+
+.timeline-image{
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  height: 48px;
+  width: 48px;
+  margin: 2px 30px 10px 10px;
+
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+a.btn.btn-danger,
+a.btn.btn-danger:hover{
+  color: #ffffff;
+}
+
+.navbar-header{
+  margin: 0 auto;
+}
