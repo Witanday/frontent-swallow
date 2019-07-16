@@ -3,7 +3,7 @@ import * as axios from "axios";
 export function apiCall(method,path, data){
     return new Promise((resolve, reject)=>{
         console.log("hello")
-        return axios[method.toLowerCase()](`https://sswallow.herokuapp.com/${path}`,data)
+        return axios[method.toLowerCase()](`https://sswallow.herokuapp.com${path}`,data)
         .then(res=>{
            
             return resolve(res.data);
